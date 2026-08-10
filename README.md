@@ -1,5 +1,9 @@
 # JXRQuickLook
 
+<p align="center">
+  <img src="docs/quicklook-demo.gif" alt="Previewing a JPEG XR image with Quick Look in Finder" width="900">
+</p>
+
 JXRQuickLook adds native JPEG XR previews and thumbnails to Finder on macOS.
 After installing and launching the app, select a `.jxr`, `.wdp`, or `.hdp` file
 and press Space to preview it with Quick Look.
