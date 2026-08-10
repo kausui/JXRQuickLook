@@ -1,0 +1,14 @@
+.DS_Store
+
+# Xcode and SwiftPM build output
+DerivedData/
+work/
+Packages/*/.build/
+Packages/*/.swiftpm/
+xcuserdata/
+*.xcuserstate
+
+# Downloaded conformance suites and large local reference captures
+Conformance/
+StellarBlade_*.jxr
+StellarBlade_*.tiff

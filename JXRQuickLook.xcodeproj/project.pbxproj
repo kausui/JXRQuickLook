@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E53AD9FE3029FF8A007DFDFB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53AD9FD3029FF8A007DFDFB /* Quartz.framework */; };
+		E53ADA0A3029FF8A007DFDFB /* JXRPreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E53AD9FB3029FF8A007DFDFB /* JXRPreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E53ADA163029FFB0007DFDFB /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53ADA153029FFB0007DFDFB /* QuickLookThumbnailing.framework */; };
+		E53ADA173029FFB0007DFDFB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53AD9FD3029FF8A007DFDFB /* Quartz.framework */; };
+		E53ADA1E3029FFB0007DFDFB /* JXRThumbnailExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E53ADA143029FFB0007DFDFB /* JXRThumbnailExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E53ADA3E302A0359007DFDFB /* JXRDecoder in Frameworks */ = {isa = PBXBuildFile; productRef = E53ADA3D302A0359007DFDFB /* JXRDecoder */; };
+		E53ADA40302A0374007DFDFB /* JXRDecoder in Frameworks */ = {isa = PBXBuildFile; productRef = E53ADA3F302A0374007DFDFB /* JXRDecoder */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E53AD9DB3029FF5B007DFDFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E53AD9C53029FF5A007DFDFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53AD9CC3029FF5A007DFDFB;
+			remoteInfo = JXRQuickLook;
+		};
+		E53AD9E53029FF5B007DFDFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E53AD9C53029FF5A007DFDFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53AD9CC3029FF5A007DFDFB;
+			remoteInfo = JXRQuickLook;
+		};
+		E53ADA083029FF8A007DFDFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E53AD9C53029FF5A007DFDFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53AD9FA3029FF8A007DFDFB;
+			remoteInfo = JXRPreviewExtension;
+		};
+		E53ADA1C3029FFB0007DFDFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E53AD9C53029FF5A007DFDFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53ADA133029FFB0007DFDFB;
+			remoteInfo = JXRThumbnailExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E53ADA0F3029FF8A007DFDFB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E53ADA1E3029FFB0007DFDFB /* JXRThumbnailExtension.appex in Embed Foundation Extensions */,
+				E53ADA0A3029FF8A007DFDFB /* JXRPreviewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E53AD9CD3029FF5A007DFDFB /* JXRQuickLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXRQuickLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53AD9DA3029FF5B007DFDFB /* JXRQuickLookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXRQuickLookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53AD9E43029FF5B007DFDFB /* JXRQuickLookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXRQuickLookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53AD9FB3029FF8A007DFDFB /* JXRPreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXRPreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53AD9FD3029FF8A007DFDFB /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		E53ADA143029FFB0007DFDFB /* JXRThumbnailExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JXRThumbnailExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53ADA153029FFB0007DFDFB /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E53ADA0B3029FF8A007DFDFB /* Exceptions for "JXRPreviewExtension" folder in "JXRPreviewExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E53AD9FA3029FF8A007DFDFB /* JXRPreviewExtension */;
+		};
+		E53ADA1F3029FFB0007DFDFB /* Exceptions for "JXRThumbnailExtension" folder in "JXRThumbnailExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E53ADA133029FFB0007DFDFB /* JXRThumbnailExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E53AD9CF3029FF5A007DFDFB /* JXRQuickLook */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JXRQuickLook;
+			sourceTree = "<group>";
+		};
+		E53AD9DD3029FF5B007DFDFB /* JXRQuickLookTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JXRQuickLookTests;
+			sourceTree = "<group>";
+		};
+		E53AD9E73029FF5B007DFDFB /* JXRQuickLookUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JXRQuickLookUITests;
+			sourceTree = "<group>";
+		};
+		E53AD9FF3029FF8A007DFDFB /* JXRPreviewExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E53ADA0B3029FF8A007DFDFB /* Exceptions for "JXRPreviewExtension" folder in "JXRPreviewExtension" target */,
+			);
+			path = JXRPreviewExtension;
+			sourceTree = "<group>";
+		};
+		E53ADA183029FFB0007DFDFB /* JXRThumbnailExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E53ADA1F3029FFB0007DFDFB /* Exceptions for "JXRThumbnailExtension" folder in "JXRThumbnailExtension" target */,
+			);
+			path = JXRThumbnailExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E53AD9CA3029FF5A007DFDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9D73029FF5B007DFDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9E13029FF5B007DFDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9F83029FF8A007DFDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53ADA3E302A0359007DFDFB /* JXRDecoder in Frameworks */,
+				E53AD9FE3029FF8A007DFDFB /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53ADA113029FFB0007DFDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53ADA163029FFB0007DFDFB /* QuickLookThumbnailing.framework in Frameworks */,
+				E53ADA173029FFB0007DFDFB /* Quartz.framework in Frameworks */,
+				E53ADA40302A0374007DFDFB /* JXRDecoder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E53AD9C43029FF5A007DFDFB = {
+			isa = PBXGroup;
+			children = (
+				E53AD9CF3029FF5A007DFDFB /* JXRQuickLook */,
+				E53AD9DD3029FF5B007DFDFB /* JXRQuickLookTests */,
+				E53AD9E73029FF5B007DFDFB /* JXRQuickLookUITests */,
+				E53AD9FF3029FF8A007DFDFB /* JXRPreviewExtension */,
+				E53ADA183029FFB0007DFDFB /* JXRThumbnailExtension */,
+				E53AD9FC3029FF8A007DFDFB /* Frameworks */,
+				E53AD9CE3029FF5A007DFDFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E53AD9CE3029FF5A007DFDFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E53AD9CD3029FF5A007DFDFB /* JXRQuickLook.app */,
+				E53AD9DA3029FF5B007DFDFB /* JXRQuickLookTests.xctest */,
+				E53AD9E43029FF5B007DFDFB /* JXRQuickLookUITests.xctest */,
+				E53AD9FB3029FF8A007DFDFB /* JXRPreviewExtension.appex */,
+				E53ADA143029FFB0007DFDFB /* JXRThumbnailExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E53AD9FC3029FF8A007DFDFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E53AD9FD3029FF8A007DFDFB /* Quartz.framework */,
+				E53ADA153029FFB0007DFDFB /* QuickLookThumbnailing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E53AD9CC3029FF5A007DFDFB /* JXRQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53AD9EE3029FF5B007DFDFB /* Build configuration list for PBXNativeTarget "JXRQuickLook" */;
+			buildPhases = (
+				E53AD9C93029FF5A007DFDFB /* Sources */,
+				E53AD9CA3029FF5A007DFDFB /* Frameworks */,
+				E53AD9CB3029FF5A007DFDFB /* Resources */,
+				E53ADA0F3029FF8A007DFDFB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E53ADA093029FF8A007DFDFB /* PBXTargetDependency */,
+				E53ADA1D3029FFB0007DFDFB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E53AD9CF3029FF5A007DFDFB /* JXRQuickLook */,
+			);
+			name = JXRQuickLook;
+			packageProductDependencies = (
+			);
+			productName = JXRQuickLook;
+			productReference = E53AD9CD3029FF5A007DFDFB /* JXRQuickLook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E53AD9D93029FF5B007DFDFB /* JXRQuickLookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53AD9F13029FF5B007DFDFB /* Build configuration list for PBXNativeTarget "JXRQuickLookTests" */;
+			buildPhases = (
+				E53AD9D63029FF5B007DFDFB /* Sources */,
+				E53AD9D73029FF5B007DFDFB /* Frameworks */,
+				E53AD9D83029FF5B007DFDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E53AD9DC3029FF5B007DFDFB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E53AD9DD3029FF5B007DFDFB /* JXRQuickLookTests */,
+			);
+			name = JXRQuickLookTests;
+			packageProductDependencies = (
+			);
+			productName = JXRQuickLookTests;
+			productReference = E53AD9DA3029FF5B007DFDFB /* JXRQuickLookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E53AD9E33029FF5B007DFDFB /* JXRQuickLookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53AD9F43029FF5B007DFDFB /* Build configuration list for PBXNativeTarget "JXRQuickLookUITests" */;
+			buildPhases = (
+				E53AD9E03029FF5B007DFDFB /* Sources */,
+				E53AD9E13029FF5B007DFDFB /* Frameworks */,
+				E53AD9E23029FF5B007DFDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E53AD9E63029FF5B007DFDFB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E53AD9E73029FF5B007DFDFB /* JXRQuickLookUITests */,
+			);
+			name = JXRQuickLookUITests;
+			packageProductDependencies = (
+			);
+			productName = JXRQuickLookUITests;
+			productReference = E53AD9E43029FF5B007DFDFB /* JXRQuickLookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E53AD9FA3029FF8A007DFDFB /* JXRPreviewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53ADA0C3029FF8A007DFDFB /* Build configuration list for PBXNativeTarget "JXRPreviewExtension" */;
+			buildPhases = (
+				E53AD9F73029FF8A007DFDFB /* Sources */,
+				E53AD9F83029FF8A007DFDFB /* Frameworks */,
+				E53AD9F93029FF8A007DFDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E53AD9FF3029FF8A007DFDFB /* JXRPreviewExtension */,
+			);
+			name = JXRPreviewExtension;
+			packageProductDependencies = (
+				E53ADA3D302A0359007DFDFB /* JXRDecoder */,
+			);
+			productName = JXRPreviewExtension;
+			productReference = E53AD9FB3029FF8A007DFDFB /* JXRPreviewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E53ADA133029FFB0007DFDFB /* JXRThumbnailExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E53ADA203029FFB0007DFDFB /* Build configuration list for PBXNativeTarget "JXRThumbnailExtension" */;
+			buildPhases = (
+				E53ADA103029FFB0007DFDFB /* Sources */,
+				E53ADA113029FFB0007DFDFB /* Frameworks */,
+				E53ADA123029FFB0007DFDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E53ADA183029FFB0007DFDFB /* JXRThumbnailExtension */,
+			);
+			name = JXRThumbnailExtension;
+			packageProductDependencies = (
+				E53ADA3F302A0374007DFDFB /* JXRDecoder */,
+			);
+			productName = JXRThumbnailExtension;
+			productReference = E53ADA143029FFB0007DFDFB /* JXRThumbnailExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E53AD9C53029FF5A007DFDFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					E53AD9CC3029FF5A007DFDFB = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					E53AD9D93029FF5B007DFDFB = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = E53AD9CC3029FF5A007DFDFB;
+					};
+					E53AD9E33029FF5B007DFDFB = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = E53AD9CC3029FF5A007DFDFB;
+					};
+					E53AD9FA3029FF8A007DFDFB = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					E53ADA133029FFB0007DFDFB = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = E53AD9C83029FF5A007DFDFB /* Build configuration list for PBXProject "JXRQuickLook" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E53AD9C43029FF5A007DFDFB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E53ADA3C302A0359007DFDFB /* XCLocalSwiftPackageReference "Packages/JXRDecoder" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E53AD9CE3029FF5A007DFDFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E53AD9CC3029FF5A007DFDFB /* JXRQuickLook */,
+				E53AD9D93029FF5B007DFDFB /* JXRQuickLookTests */,
+				E53AD9E33029FF5B007DFDFB /* JXRQuickLookUITests */,
+				E53AD9FA3029FF8A007DFDFB /* JXRPreviewExtension */,
+				E53ADA133029FFB0007DFDFB /* JXRThumbnailExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E53AD9CB3029FF5A007DFDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9D83029FF5B007DFDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9E23029FF5B007DFDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9F93029FF8A007DFDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53ADA123029FFB0007DFDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E53AD9C93029FF5A007DFDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9D63029FF5B007DFDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9E03029FF5B007DFDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53AD9F73029FF8A007DFDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53ADA103029FFB0007DFDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E53AD9DC3029FF5B007DFDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53AD9CC3029FF5A007DFDFB /* JXRQuickLook */;
+			targetProxy = E53AD9DB3029FF5B007DFDFB /* PBXContainerItemProxy */;
+		};
+		E53AD9E63029FF5B007DFDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53AD9CC3029FF5A007DFDFB /* JXRQuickLook */;
+			targetProxy = E53AD9E53029FF5B007DFDFB /* PBXContainerItemProxy */;
+		};
+		E53ADA093029FF8A007DFDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53AD9FA3029FF8A007DFDFB /* JXRPreviewExtension */;
+			targetProxy = E53ADA083029FF8A007DFDFB /* PBXContainerItemProxy */;
+		};
+		E53ADA1D3029FFB0007DFDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53ADA133029FFB0007DFDFB /* JXRThumbnailExtension */;
+			targetProxy = E53ADA1C3029FFB0007DFDFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E53AD9EC3029FF5B007DFDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E53AD9ED3029FF5B007DFDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E53AD9EF3029FF5B007DFDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JXRQuickLook-Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E53AD9F03029FF5B007DFDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JXRQuickLook-Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E53AD9F23029FF5B007DFDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXRQuickLook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JXRQuickLook";
+			};
+			name = Debug;
+		};
+		E53AD9F33029FF5B007DFDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JXRQuickLook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JXRQuickLook";
+			};
+			name = Release;
+		};
+		E53AD9F53029FF5B007DFDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = JXRQuickLook;
+			};
+			name = Debug;
+		};
+		E53AD9F63029FF5B007DFDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = JXRQuickLook;
+			};
+			name = Release;
+		};
+		E53ADA0D3029FF8A007DFDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JXRPreviewExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JXRPreviewExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLook.JXRPreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E53ADA0E3029FF8A007DFDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JXRPreviewExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JXRPreviewExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLook.JXRPreviewExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E53ADA213029FFB0007DFDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JXRThumbnailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JXRThumbnailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLook.JXRThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E53ADA223029FFB0007DFDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VFWZ3M427;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JXRThumbnailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JXRThumbnailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yokonetto.JXRQuickLook.JXRThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E53AD9C83029FF5A007DFDFB /* Build configuration list for PBXProject "JXRQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53AD9EC3029FF5B007DFDFB /* Debug */,
+				E53AD9ED3029FF5B007DFDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E53AD9EE3029FF5B007DFDFB /* Build configuration list for PBXNativeTarget "JXRQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53AD9EF3029FF5B007DFDFB /* Debug */,
+				E53AD9F03029FF5B007DFDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E53AD9F13029FF5B007DFDFB /* Build configuration list for PBXNativeTarget "JXRQuickLookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53AD9F23029FF5B007DFDFB /* Debug */,
+				E53AD9F33029FF5B007DFDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E53AD9F43029FF5B007DFDFB /* Build configuration list for PBXNativeTarget "JXRQuickLookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53AD9F53029FF5B007DFDFB /* Debug */,
+				E53AD9F63029FF5B007DFDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E53ADA0C3029FF8A007DFDFB /* Build configuration list for PBXNativeTarget "JXRPreviewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53ADA0D3029FF8A007DFDFB /* Debug */,
+				E53ADA0E3029FF8A007DFDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E53ADA203029FFB0007DFDFB /* Build configuration list for PBXNativeTarget "JXRThumbnailExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53ADA213029FFB0007DFDFB /* Debug */,
+				E53ADA223029FFB0007DFDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E53ADA3C302A0359007DFDFB /* XCLocalSwiftPackageReference "Packages/JXRDecoder" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/JXRDecoder;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E53ADA3D302A0359007DFDFB /* JXRDecoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JXRDecoder;
+		};
+		E53ADA3F302A0374007DFDFB /* JXRDecoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E53ADA3C302A0359007DFDFB /* XCLocalSwiftPackageReference "Packages/JXRDecoder" */;
+			productName = JXRDecoder;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E53AD9C53029FF5A007DFDFB /* Project object */;
+}
