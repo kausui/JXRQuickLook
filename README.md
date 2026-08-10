@@ -9,6 +9,13 @@ are rendered as 32-bit floating-point RGBA images in Extended Linear sRGB,
 while Finder thumbnails are tone-mapped to SDR sRGB for consistent icon-view
 display.
 
+## Download
+
+Download the latest signed and notarized universal macOS build from
+[GitHub Releases](https://github.com/kausui/JXRQuickLook/releases/latest).
+Unzip the archive, move `JXRQuickLook.app` to the Applications folder, and
+launch it once so macOS can register the bundled Quick Look extensions.
+
 ## Features
 
 - Space-bar Quick Look previews in Finder

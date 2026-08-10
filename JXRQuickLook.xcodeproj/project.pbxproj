@@ -931,6 +931,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		E53ADA3D302A0359007DFDFB /* JXRDecoder */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = E53ADA3C302A0359007DFDFB /* XCLocalSwiftPackageReference "Packages/JXRDecoder" */;
 			productName = JXRDecoder;
 		};
 		E53ADA3F302A0374007DFDFB /* JXRDecoder */ = {
