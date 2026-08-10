@@ -34,10 +34,10 @@ class PreviewViewController: NSViewController, QLPreviewingController {
     */
 
     func preparePreviewOfFile(at url: URL) async throws {
-        // A full-size 4K RGBA Float buffer is about 127 MiB before Core
-        // Animation creates its render copy. Decode a native half-resolution
-        // JPEG XR preview to stay within the Quick Look extension memory limit.
-        let cgImage = try JXRDecoder.makeHDRImage(from: url, maximumDimension: 2_048)
+        // Test configuration: decode up to native 4K resolution. A 3840 x 2160
+        // RGBA Float image uses about 127 MiB before Core Animation creates its
+        // render copy, so this may expose Quick Look extension memory pressure.
+        let cgImage = try JXRDecoder.makeHDRImage(from: url, maximumDimension: 4_096)
         previewImage = cgImage
         view.layer?.contents = cgImage
 
